@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.notesmanagerapp.LoginFragment"
-        android:label="Login"
+        android:label="Welcome"
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_homeFragment2"
@@ -17,16 +17,20 @@
     <fragment
         android:id="@+id/homeFragment2"
         android:name="com.example.notesmanagerapp.HomeFragment"
-        android:label="Home"
+        android:label="My Notes"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue="Guest" />
     </fragment>
 
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.notesmanagerapp.ProfileFragment"
-        android:label="Profile"
+        android:label="Add Note"
         tools:layout="@layout/fragment_profile" />
 </navigation>

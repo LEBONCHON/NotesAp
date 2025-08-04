@@ -13,3 +13,16 @@
 .externalNativeBuild
 .cxx
 local.properties
+/app/build/
+/app/.cxx/
+*.apk
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache

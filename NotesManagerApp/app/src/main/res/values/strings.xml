@@ -1,5 +1,13 @@
 <resources>
-    <string name="app_name">NotesManagerApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Notes App</string>
+    <string name="welcome_text">Welcome to Notes App</string>
+    <string name="enter_name_text">Enter your name to get started</string>
+    <string name="note_title_hint">Note title</string>
+    <string name="note_content_hint">Write your note here...</string>
+    <string name="save_note">Save Note</string>
+    <string name="update_note">Update Note</string>
+    <string name="share_note">Share Note</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_note">Add Note</string>
 </resources>

@@ -5,11 +5,45 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:padding="24dp"
     tools:context=".LoginFragment">
 
-    <Button
-        android:id="@+id/btnLogin"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login" />
+        android:text="Welcome to Notes App"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your name to get started"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your name"
+            android:maxLines="1"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEnterApp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Enter App" />
+
 </LinearLayout>

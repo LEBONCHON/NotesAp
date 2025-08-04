@@ -5,16 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".ProfileFragment">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add New Note"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="24dp" />
+    tools:context=".NoteDetailActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -41,7 +32,7 @@
             android:id="@+id/etNoteContent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Write your note here..."
+            android:hint="Note content..."
             android:gravity="top"
             android:inputType="textMultiLine" />
 
@@ -51,21 +42,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="end">
+        android:gravity="center">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnCancelNote"
-            style="@style/Widget.Material3.Button.TextButton"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnShareNote"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_marginEnd="8dp"
-            android:text="Cancel" />
+            android:text="Share Note"
+            android:drawableStart="@android:drawable/ic_menu_share" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnSaveNote"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnUpdateNote"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Save Note" />
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Update Note" />
 
     </LinearLayout>
 

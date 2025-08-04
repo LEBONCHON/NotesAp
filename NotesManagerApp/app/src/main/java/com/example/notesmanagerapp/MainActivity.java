@@ -24,8 +24,15 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // ✅ Set up navigation controller
+        // Set up navigation controller
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        return NavigationUI.navigateUp(navController, (androidx.drawerlayout.widget.DrawerLayout) null)
+                || super.onSupportNavigateUp();
     }
 }
